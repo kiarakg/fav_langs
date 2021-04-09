@@ -22,4 +22,10 @@ fav_lang = input("Enter your favorite programming languages: ")
 fav_list = fav_lang.split(",")
 data_scientist["Favorite Languages"] = fav_list
 
+
+first_set = set(lang_list)
+fav_set = set(fav_list)
+consistant_fav = first_set.intersection(fav_set)
+data_scientist["Consitant Favorites"] = consistant_fav
+
 print(data_scientist)
