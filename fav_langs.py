@@ -10,10 +10,16 @@ data_scientist["Years"] = input("How long have you been coding? ")
 
 print(data_scientist)
 
+
 first_languages = input("Enter the first three programming language you have learned (separated by commas): ")
 lang_list = first_languages.split(",")
 lang_tuple = tuple (lang_list)
 
 data_scientist["First Languages"] = lang_tuple
+
+
+fav_lang = input("Enter your favorite programming languages: ")
+fav_list = fav_lang.split(",")
+data_scientist["Favorite Languages"] = fav_list
 
 print(data_scientist)
